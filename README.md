@@ -48,8 +48,8 @@ Turn multibase encoded string back into buffer
 **Note**: This does not seem to strip leading zery bytes from buffers such as `bytes([0,123]`
 
 ```python
-zeropadded = bytes.fromhex('000000aabb')
-print(decode(encode(zeropadded)).hex())
+>>> zeropadded = bytes.fromhex('000000aabb')
+>>> print(decode(encode(zeropadded)).hex())
 'aabb' # whoops we lost some zeros
 ```
 
